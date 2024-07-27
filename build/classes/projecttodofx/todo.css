@@ -1,0 +1,28 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.mainFxmlClass {
+    -fx-background-color: #333333;
+}
+.pane{
+    -fx-border-color: #fff;
+    -fx-border-radius: 20px;
+}
+.textinput{
+    -fx-background-color: #666666;
+    -fx-text-fill: #fff;
+}
+.maintasks{
+    
+}
+.task{
+   -fx-border-color: #fff; 
+   -fx-border-radius: 10px;
+}
+.button{
+     -fx-border-color: transparent;
+    -fx-border-width: 0;
+    -fx-background-radius: 0;
+    -fx-background-color: transparent;
+}
