@@ -1,3 +1,9 @@
+.strikethrough {
+    -fx-strikethrough: true;
+}
+.notstrikethrough {
+    -fx-strikethrough: false;
+}
 /*
  * Empty Stylesheet file.
  */
@@ -14,7 +20,7 @@
     -fx-text-fill: #fff;
 }
 .maintasks{
-    
+     -fx-background-color: #333333;
 }
 .task{
    -fx-border-color: #fff; 
@@ -25,4 +31,32 @@
     -fx-border-width: 0;
     -fx-background-radius: 0;
     -fx-background-color: transparent;
+}
+
+/* styles.css */
+.scroll-pane .viewport {
+    -fx-background-color: transparent; /* Make the viewport background transparent */
+}
+
+.scroll-pane .scroll-bar {
+    -fx-background-color: #2b2b2b; /* Background color of the scroll bar */
+}
+
+.scroll-bar .thumb {
+    -fx-background-color: #5a5a5a; /* Color of the thumb (the draggable part) */
+    -fx-background-insets: 0; /* Remove default insets */
+    -fx-background-radius: 5; /* Rounded corners */
+}
+
+.scroll-bar .increment-button,
+.scroll-bar .decrement-button {
+    -fx-background-color: #5a5a5a; /* Color of the increment and decrement buttons */
+    -fx-background-radius: 5; /* Rounded corners */
+}
+
+.scroll-bar:horizontal .increment-arrow,
+.scroll-bar:horizontal .decrement-arrow,
+.scroll-bar:vertical .increment-arrow,
+.scroll-bar:vertical .decrement-arrow {
+    -fx-background-color: transparent; /* Make the arrows transparent */
 }

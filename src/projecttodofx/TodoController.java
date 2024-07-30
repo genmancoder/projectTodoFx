@@ -11,18 +11,25 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
+import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
-import javafx.scene.image.Image;
-import javafx.scene.image.ImageView;
+import javafx.scene.input.KeyEvent;
+import javafx.scene.layout.VBox;
+import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.HBox;
 
 /**
  * FXML Controller class
  *
- * @author Admin
- */
-public class TodoController implements Initializable {
-
+ * @author Ad
+ **/
+ public class TodoController implements Initializable{
+     
+    private Label lblCounter;
+    @FXML
+    private VBox parentBox;
+    @FXML
+    private Label lblStatus;
     @FXML
     private Button btnAdd;
     @FXML
@@ -42,27 +49,20 @@ public class TodoController implements Initializable {
 
     @FXML
     private void addTask(ActionEvent event) {
-        String task = txtTask.getText().toString();
-        System.out.println("task is " + task);
-        txtTask.setText("");
-        HBox hbox = new HBox();
-        
-        Image image = new Image(getClass().getResourceAsStream("/projecttodofx/icons8_circle_32px.png"));
-        ImageView imageView = new ImageView(image);
-        imageView.setFitWidth(150);
-        imageView.setPreserveRatio(true);
-        
-        hbox.getChildren().add(imageView);
-        
-        Button btnEdit = new Button();
-        Button btnDelete = new Button();
-        
-        hbox.getChildren().add(btnEdit);
-        hbox.getChildren().add(btnDelete);
-        
-        hboxTasks.getChildren().add(hbox);
-        
-        
+      
+    }
+
+    @FXML
+    private void closeApp(MouseEvent event) {
+    }
+
+    @FXML
+    private void minimizeApp(MouseEvent event) {
+    }
+
+    @FXML
+    private void handleKeyPressed(KeyEvent event) {
+  
     }
     
 }
